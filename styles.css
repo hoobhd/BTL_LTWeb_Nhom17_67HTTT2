@@ -23,7 +23,7 @@ body {
     border: 1px solid #333333;
 }
 
-/* Màn hình hiển thị giống trong ảnh */
+/* Màn hình hiển thị */
 .display-container {
     height: 120px;
     padding: 16px 14px;
@@ -66,7 +66,7 @@ body {
     align-items: center;
 }
 
-/* Nút chức năng & phép tính (màu tối hơn nút số) */
+/* Nút chức năng & phép tính */
 .btn-func {
     background-color: #323232;
     color: #ffffff;
@@ -77,7 +77,7 @@ body {
     background-color: #3b3b3b;
 }
 
-/* Nút số (màu sáng hơn một chút) */
+/* Nút số */
 .btn-num {
     background-color: #3b3b3b;
     color: #ffffff;
@@ -88,7 +88,7 @@ body {
     background-color: #323232;
 }
 
-/* Nút dấu bằng (=) màu xám sáng ở góc dưới phải */
+/* Nút dấu bằng (=) */
 .btn-equal {
     background-color: #cbc6c4;
     color: #1c1c1c;
