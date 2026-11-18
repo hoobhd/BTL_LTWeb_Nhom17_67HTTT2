@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Cơ Bản</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculator">
+        <!-- Màn hình hiển thị -->
+        <div class="display-container">
+            <div id="history" class="history"></div>
+            <div id="display" class="display">0</div>
+        </div>
+
+        <!-- Lưới phím 4x5 chuẩn bố cục Windows Dark Mode -->
+        <div class="keypad">
+            <!-- Hàng 1: Các nút xóa và chia -->
+            <button class="btn-func" onclick="clearEntry()">CE</button>
+            <button class="btn-func" onclick="clearAll()">C</button>
+            <button class="btn-func" onclick="backspace()">⌫</button>
+            <button class="btn-func" onclick="chooseOperator('/')">÷</button>
+
+            <!-- Hàng 2 -->
+            <button class="btn-num" onclick="inputDigit('7')">7</button>
+            <button class="btn-num" onclick="inputDigit('8')">8</button>
+            <button class="btn-num" onclick="inputDigit('9')">9</button>
+            <button class="btn-func" onclick="chooseOperator('*')">×</button>
+
+            <!-- Hàng 3 -->
+            <button class="btn-num" onclick="inputDigit('4')">4</button>
+            <button class="btn-num" onclick="inputDigit('5')">5</button>
+            <button class="btn-num" onclick="inputDigit('6')">6</button>
+            <button class="btn-func" onclick="chooseOperator('-')">−</button>
+
+            <!-- Hàng 4 -->
+            <button class="btn-num" onclick="inputDigit('1')">1</button>
+            <button class="btn-num" onclick="inputDigit('2')">2</button>
+            <button class="btn-num" onclick="inputDigit('3')">3</button>
+            <button class="btn-func" onclick="chooseOperator('+')">+</button>
+
+            <!-- Hàng 5 -->
+            <button class="btn-num" onclick="toggleSign()">⁺/₋</button>
+            <button class="btn-num" onclick="inputDigit('0')">0</button>
+            <button class="btn-num" onclick="inputDecimal()">.</button>
+            <button class="btn-equal" onclick="compute()">=</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
