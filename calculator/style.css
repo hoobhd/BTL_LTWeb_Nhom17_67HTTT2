@@ -1,0 +1,82 @@
+/* Đặt lại khoảng cách mặc định của trình duyệt */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Nền trang, căn máy tính ra giữa màn hình */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #e8ecef;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+}
+
+/* Khung máy tính */
+.calculator {
+  width: 100%;
+  max-width: 320px;
+  background-color: #222;
+  border-radius: 20px;
+  padding: 16px;
+}
+
+/* Màn hình hiển thị số */
+.screen {
+  color: white;
+  text-align: right;
+  padding: 16px 8px;
+  min-height: 100px;
+  word-wrap: break-word;
+}
+
+.expression {
+  font-size: 16px;
+  color: #999;
+  min-height: 20px;
+}
+
+.display {
+  font-size: 40px;
+  margin-top: 8px;
+}
+
+/* Lưới nút bấm: 4 cột đều nhau */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 10px;
+}
+
+/* Kiểu chung cho tất cả các nút */
+button {
+  font-size: 22px;
+  height: 60px;
+  border: none;
+  border-radius: 12px;
+  background-color: #444;
+  color: white;
+  cursor: pointer;
+}
+
+button:hover {
+  opacity: 0.85;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Nút xám (C, ⌫, %, ±) */
+button.gray {
+  background-color: #777;
+}
+
+/* Nút cam (phép tính và dấu =) */
+button.orange {
+  background-color: #ff9500;
+}
